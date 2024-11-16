@@ -1,8 +1,7 @@
 
 const key =process.env.REACT_APP_TMDB_API_KEY;
 
-console.log(key,'keyyy');
-console.log(process.env.REACT_APP_TMDB_API_KEY,'itemmmmmmmm'); // Should log the correct API key
+
 
 
 const requests = {
