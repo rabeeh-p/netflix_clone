@@ -22,9 +22,7 @@ const SignUp = () => {
             console.log(err);
             alert(err)
             
-
         }
-
     }
 
   return (
