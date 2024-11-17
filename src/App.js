@@ -1,16 +1,19 @@
 import Navbar from "./components/Navbar";
 import {Routes,Route} from 'react-router-dom'
 import Home from "./pages/Home";
+import { AuthContextProvider } from "./context/AuthContext";
 
 function App() {
   return (
     <>
-    <Navbar/>
+    <AuthContextProvider>
 
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
 
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-    </Routes>
+    </AuthContextProvider>
     </>
   );
 }
