@@ -36,7 +36,8 @@ const Row = ({title, fetchURL,rowId}) => {
             </div>
       <MdChevronRight onClick={slideRight} className=' bg-white right-0 rounded-full  absolute opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block' size={40} />
       </div>
-
+        
+      
 
     </>
   )

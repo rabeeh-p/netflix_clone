@@ -12,15 +12,30 @@ function App() {
     <>
     <AuthContextProvider>
 
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/signup" element={<SignUp/>}/>
-        <Route path="/account" element={<ProtectedRoute>
-          <Account/>
-          </ProtectedRoute>}/>
-      </Routes>
+     
+      <Navbar />
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          
+          <Route 
+            path="/" 
+            element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            } 
+          />
+
+          <Route 
+            path="/account" 
+            element={
+              <ProtectedRoute>
+                <Account />
+              </ProtectedRoute>
+            } 
+          />
+        </Routes>
 
     </AuthContextProvider>
     </>
